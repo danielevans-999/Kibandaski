@@ -18,6 +18,10 @@ p:hover {
     cursor: pointer;
 }
 
+.colms {
+    padding-bottom: 10px;
+}
+
 .img {
     height: 200px;
 }

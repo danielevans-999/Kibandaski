@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/materialize.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Pizza mojo</title>
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+    <nav>
+        <div class="nav-wrapper container-fluid">
+            <a href="#" class="brand-logo left" style="font-family:  'Carter One', cursive; ">Pizza-mojo</a>
+            <ul id="nav-mobile" class="right">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about-us">ABOUT US</a></li>
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="one">
+        <div class="home-items">
+            <h3>Pizza The Heart Of Every Meal</h3>
+            <button type="button" class="btn btn-info order" id="explore" name="button">GET ONE </button>
+        </div>
+    </div>
+    <br>
+    <div id="about-us" class="container">
+        <h3 id="abt-heading">OUR FLAVOUR</h3>
+        <div class="row">
+            <div class="col-md-6 offset-3">
+                <img height="200px" width="200px" src="https://irepo.primecp.com/2016/03/259818/recipe-8612_ArticleImage-CategoryPage_ID-1461069.jpg?v=1461069" id="abt1" alt="img">
+            </div>
+            <div class="col-md-6">
+                <p style="margin-left: 200px;" id="abt-message">Pizza-Mojo give you pizza tha comes in chicken flavour
+                    <br> ,this flavours are finger licking sweet that will leave you with an amazing experience.The price are pocket friendly</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div id="menu" class="container-fluid menu">
+        <div class="row">
+            <div class="col s12 m4 offset-4">
+                <div class="card">
+                    <div class="card-image">
+                        <img height="200px" width="200px" src="https://cdn.cdkitchen.com/recipes/images/2016/03/4791-5227-mx.jpg">
+                        <span class="card-title" style="color: khaki">Chicken Pizza</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Pizza Mojo gives you a tasty experience of the chicken flavour Pizza with a free delivery.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <button type="button" id="first" class="btn btn-warning" name="button">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row chicken ">
+        <div class="col-md-12">
+            <div class=" card1">
+                <span class="finish"></span>
+                <form class='kuku'>
+
+                    <img class="pizza-s size1" src="pizza-size.png" alt="">
+                    <h6>Toppings</h6>
+                    <label for='cheese'>Cheese</label>
+                    <input type='checkbox' name='topping' value='cheese' id='cheese'>
+                    <label for='peperoni'>Peperoni</label>
+                    <input type='checkbox' name='topping' value='peperoni' id='peperoni'>
+                    <label for='ham'>Ham</label>
+                    <input type='checkbox' name='topping' value='ham' id='ham'>
+                    <h6>Crust Type</h6>
+                    <label for='crust'>Crispy</label>
+                    <input type='radio' name='crust-l' value='crispy' id='crust' checked>
+                    <label for='crust'>Stuffed</label>
+                    <input type='radio' name='crust-l' value='stuffed' id='crust'>
+                    <label for='crust'>Gluten-free</label>
+                    <input type='radio' name='crust-l' value='gluten-free' id='crust'><br>
+                    <label for='quantity'>Quantinty</label>
+                    <input type='number' class='form-control' id='quantity'><br>
+                    <button class='btn btn-primary btn-l' type='submit'>Add To Cart</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class=" container-fluid cart">
+        <div class=" container cart-data">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>Shopping Cart</h3>
+                </div>
+                <div class="col-md-8">
+                    <hr>
+                    <span class="line"></span>
+                </div>
+                <div class="col-md-1">
+                    <span class="close"> X</span>
+                </div>
+            </div>
+            <div class=" container">
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">No.</th>
+                                    <th scope="col">Pizza</th>
+                                    <th scope="col">Crust</th>
+                                    <th scope="col">Toppings</th>
+                                    <th scope="col">Size</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody class="cart1">
+
+                            </tbody>
+                            <br><br>
+                            <tfoot>
+                                <tr><em>
+                                        <th>Total </th>
+                                        <th id="price"></th>
+                                    </em>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <button type="button" name="button" class="btn btn-info" id="delivery">Delivery</button>
+                        <button type="button" name="button" class="btn btn-success" id="checkout">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <span class="shopping-cart"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkkaJQP9UjRMjLJc11fXPxHeakfnohCF8sGLzeD4TbVc9SmOj3"
+            alt="" width="20px;"> <span class="items-added">
+            <small>1</small> </span> </span>
+
+
+    <div class="container-fluid contact">
+        <div class="overlay">
+
+            <h3>contact Us</h3>
+            <div class="row email-row">
+                <div class="col-md-4 offset-md-2 email" id="email-col">
+                    <h5>Email Us</h5>
+                    <form id="Email" action="index.html" method="post">
+                        <div class="form-group">
+                            <label for="">Your Name</label>
+                            <input class="form-control" type="text" name="" value="" id="names" placeholder="Your Names">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input class="form-control" type="email" name="" value="" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Your Message</label>
+                            <textarea name="name" rows="4" id="message" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-info" name="button">Send Email</button>
+                    </form>
+                </div>
+
+
+
+
+                <script src="js/jscripts.js"></script>
+                <script src="js/scripts.js"></script>
+</body>
+
+</html>
